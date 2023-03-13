@@ -1,0 +1,80 @@
+:root {
+    --green: 126, 181, 168;
+    --green-light: #42C586;
+    --purple: 163, 142, 207;
+    --purple-light: #8B6BD0;
+}
+
+body {
+    background-image: url(./images/background.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    padding: 7rem;
+    box-sizing: border-box;
+    height: 100vh;
+    font-family: "Baumans", sans-serif;
+}
+
+.welcome {
+    text-align: center;
+    font-size: 10rem;
+}
+
+.welcome-description {
+    margin: 5rem 0;
+    font-size: 2.5rem;
+    max-width: 50%;
+    text-align: justify;
+}
+
+.buttons-wrapper {
+    margin-top: 3rem;
+}
+
+.buttons-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.main-buttons {
+    width: calc(100%/4);
+    text-align: center;
+}
+
+.main-links {
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    border: 6px solid var(--green-light);
+    background-color: rgb(var(--green), 0.7);
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.main-links:hover {
+    background-color: rgb(var(--purple), 0.7);
+    border-color: var(--purple-light);
+}
+
+@media screen and (max-width:1440px) {
+    .welcome {
+        font-size: 6rem;
+    }
+    
+    .welcome-description {
+        margin: 3rem 0;
+        font-size: 2rem;
+    }
+    
+    .main-buttons {
+        border: 3px solid var(--green-light);
+        font-size: 1.2rem;
+        width: calc(100%/4.5);
+    }
+}
