@@ -22,6 +22,33 @@ body {
     font-size: 10rem;
 }
 
+.party-hard {
+    animation: pulse 5s infinite;
+  }
+  @keyframes pulse {
+    0% {
+      color: #eb3a3a;
+    }
+    20% {
+      color: #e0f734;
+    }
+    40% {
+      color: #34f741;
+    }
+    50% {
+        color: #34f7d3;
+    }
+    70% {
+        color: #344bf7;
+    }
+    80% {
+        color: #a934f7;
+    }       
+    100% {
+        color: #f7345e;
+    }         
+  }
+
 @media screen and (max-width:1440px) {
     .page-title {
         font-size: 6rem;
