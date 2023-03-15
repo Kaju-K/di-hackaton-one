@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: url(./images/background.svg);
+    background-image: url("./images/background.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -17,64 +17,40 @@ body {
     font-family: "Baumans", sans-serif;
 }
 
-.welcome {
+.page-title {
     text-align: center;
     font-size: 10rem;
 }
 
-.welcome-description {
-    margin: 5rem 0;
-    font-size: 2.5rem;
-    max-width: 50%;
-    text-align: justify;
-}
-
-.buttons-wrapper {
-    margin-top: 3rem;
-}
-
-.buttons-list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-
-.main-buttons {
-    width: calc(100%/4);
-    text-align: center;
-}
-
-.main-links {
-    padding: 1rem 2rem;
-    border-radius: 50px;
-    font-size: 1.5rem;
-    border: 6px solid var(--green-light);
-    background-color: rgb(var(--green), 0.7);
-    text-decoration: none;
-    color: inherit;
-    display: block;
-}
-
-.main-links:hover {
-    background-color: rgb(var(--purple), 0.7);
-    border-color: var(--purple-light);
-}
+.party-hard {
+    animation: pulse 5s infinite;
+  }
+  @keyframes pulse {
+    0% {
+      color: #eb3a3a;
+    }
+    20% {
+      color: #e0f734;
+    }
+    40% {
+      color: #34f741;
+    }
+    50% {
+        color: #34f7d3;
+    }
+    70% {
+        color: #344bf7;
+    }
+    80% {
+        color: #a934f7;
+    }       
+    100% {
+        color: #f7345e;
+    }         
+  }
 
 @media screen and (max-width:1440px) {
-    .welcome {
+    .page-title {
         font-size: 6rem;
-    }
-    
-    .welcome-description {
-        margin: 3rem 0;
-        font-size: 2rem;
-    }
-    
-    .main-buttons {
-        border: 3px solid var(--green-light);
-        font-size: 1.2rem;
-        width: calc(100%/4.5);
     }
 }
