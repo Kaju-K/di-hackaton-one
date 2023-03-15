@@ -1,7 +1,16 @@
+body {
+    padding: 7rem 10rem;
+    }
+
+.page-title {
+    text-align: left;
+    font-size: 7rem;
+  }
+
 .back {
     position: absolute;
     top: 3rem;
-    left: 7rem;
+    left: 10rem;
     display: flex;
     text-decoration: none;
     align-items: center;
@@ -16,11 +25,10 @@
 
 .cards-wrapper {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     justify-content: space-between;
     align-items: flex-start;
     gap: 2rem;
-    flex-wrap: wrap;
     margin: 5rem 0;
 }
 
@@ -65,16 +73,96 @@
 
 .card:hover > .card-content > .card-description {
     display: block;
-    /* overflow-y: auto; */
-    /* overflow-x: overlay; */
 }
 
-/* .card:hover > .card-content > .card-description::-webkit-scrollbar {
-    width: 5px;
-    background-color: transparent;
+
+
+
+@media screen and (max-width:1440px) {  
+    .page-title {
+        font-size: 6rem;
+    }
+    .back {
+        font-size: 2rem;
+        left: 7rem;
+
+    }
+    .cards-wrapper {
+            grid-template-columns: repeat(3, 1fr);
+    }
+    body {
+        padding: 7rem;
+    }
 }
 
-.card:hover > .card-content > .card-description::-webkit-scrollbar-thumb {
-    border-radius: 20px;
-    background: gray;
-} */
+@media screen and (max-width:1024px) {  
+    .page-title {
+        font-size: 6rem;
+    }
+    .back {
+        font-size: 1.5rem;
+        left: 7rem;
+
+    }
+    .cards-wrapper {
+            grid-template-columns: repeat(2, 1fr);
+    }
+    body {
+        padding: 7rem;
+    }
+}
+
+@media screen and (max-width:800px) {  
+    .page-title {
+        font-size: 4rem;
+    }
+    .back {
+        font-size: 1rem;
+        left: 3rem;
+    }
+    .cards-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card-title {
+        font-size: 1.5rem;
+    }
+    .card-description {
+        font-size: 1rem;
+    }
+    body {
+    padding: 7rem 3rem;
+    }
+}
+
+
+@media screen and (max-width:500px) {  
+    .page-title {
+        font-size: 2.5rem;
+    }
+    .back {
+        font-size: 1rem;
+        left: 2rem;
+    }
+    .card-title {
+        font-size: 1.3rem;
+    }
+    body {
+        padding: 7rem 2rem;
+    }
+}
+
+@media screen and (max-width:300px) {  
+    .page-title {
+        font-size: 1.5rem;
+    }
+    .back {
+        font-size: 1rem;
+        left: 2rem;
+    }
+    .card-title {
+        font-size: 1rem;
+    }
+    body {
+        padding: 7rem 2rem;
+    }
+}

@@ -1,7 +1,11 @@
+.page-title {
+    text-align: center;
+    font-size: 10rem;
+}
+
 .welcome-description {
     margin: 5rem 0;
     font-size: 2.5rem;
-    /* max-width: 50%; */
     text-align: justify;
 }
 
@@ -12,14 +16,11 @@
 .buttons-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* justify-content: space-between; */
-    /* align-items: center; */
     gap: 3rem;
-    /* flex-wrap: wrap; */
+    padding-bottom: 2rem;
 }
 
 .main-buttons {
-    /* width: calc(100%/4); */
     text-align: center;
 }
 
@@ -37,20 +38,95 @@
 .main-links:hover {
     background-color: rgb(var(--purple), 0.7);
     border-color: var(--purple-light);
+    animation: pulse2 2.5s infinite;
 }
-
+    @keyframes pulse2 {
+        0% {
+          color: #eb3a3a;
+        }
+        50% {
+          color: #e0f734;
+        }
+        80% {
+          color: #34f741;
+        }
+        100% {
+            color: #eb5b3a;
+          }
+        }         
+      
 @media screen and (max-width:1440px) {  
+    .page-title {
+        font-size: 6rem;
+    }
+   
     .welcome-description {
         margin: 3rem 0;
         font-size: 2rem;
     }
+       
+    .main-links {
+        border: 3px solid var(--green-light);
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width:800px) {  
+    body {
+        padding: 7rem 3rem;
+    }
+
+    .page-title {
+        font-size: 4rem;
+    }
     
-    .main-buttons {
-        width: calc(100%/4);
+    .welcome-description {
+        margin: 3rem 0;
+        font-size: 1rem;
+    }
+    
+    .main-links {
+        border: 3px solid var(--green-light);
+        font-size: 1rem;
+    }
+    
+    .buttons-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        gap: 3rem;
+    }
+}
+
+
+@media screen and (max-width:500px) {  
+    body {
+        padding: 7rem 3rem;
+    }
+    
+    .page-title {
+        font-size: 3rem;
+    }
+
+    .welcome-description {
+        margin: 1rem 0;
+        font-size: 1rem;
     }
     
     .main-links {
         border: 3px solid var(--green-light);
         font-size: 1.2rem;
+    }
+    
+    .buttons-list {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 3rem;
+    }
+}
+
+@media screen and (min-width:1600px) {  
+    .main-links {
+        padding: 3rem 2rem;
     }
 }
