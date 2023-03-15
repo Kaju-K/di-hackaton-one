@@ -17,10 +17,6 @@ body {
     font-family: "Baumans", sans-serif;
 }
 
-.page-title {
-    text-align: center;
-    font-size: 10rem;
-}
 
 .party-hard {
     animation: pulse 5s infinite;
@@ -49,8 +45,3 @@ body {
     }         
   }
 
-@media screen and (max-width:1440px) {
-    .page-title {
-        font-size: 6rem;
-    }
-}
